@@ -14,8 +14,8 @@ import tempfile
 import random
 import signal
 
-DISCORD_BOT_TOKEN = "MTQ2NTIyNzQwOTk0MjEyMjY1NQ.GNQJwI.UagakzhADuFfpdjsOYBgB1W3AjOhJ8iRtXDQdE"
-DISCORD_CHANNEL_ID = 1465589300761596128
+DISCORD_BOT_TOKEN = "Place_Bot_Token_Here"
+DISCORD_CHANNEL_ID = Place_Channel_ID_Here
 AUTHORIZED = True  
 CREATOR_NAME = "(Skid Larp / MrMolly4)"
 ALLOWED_COMMANDS = {
@@ -326,4 +326,5 @@ async def on_message(message):
 def start_discord():
     client.run(DISCORD_BOT_TOKEN)
 threading.Thread(target=start_discord, daemon=True).start()
+
 root.mainloop()
